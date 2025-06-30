@@ -50,11 +50,14 @@ export const HeroContent = () => {
         </motion.p>
 
         <motion.a
-          variants={slideInFromLeft(1)}
-          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
-        >
-          Learn more
-        </motion.a>
+        variants={slideInFromLeft(1)}
+        href="https://drive.google.com/file/d/1epauWMNBGsKI6UroEBktFhQiZB__LTbF/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] hover:scale-105 transition-transform duration-300"
+      >
+        View Resume
+      </motion.a>
       </div>
 
       <motion.div
