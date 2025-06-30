@@ -115,8 +115,8 @@ const ExperienceCard = ({
       <div className="absolute left-1/2 transform -translate-x-1/2 z-20">
         <motion.div
           animate={{
-            scale: isHovered ? 1.2 : 1,
-            rotate: isHovered ? 180 : 0,
+            scale: isHovered ? 1.6 : 1,
+            // rotate: isHovered ? 180 : 0,
           }}
           transition={{ duration: 0.3 }}
           className="w-16 h-16 rounded-full bg-gradient-to-br from-purple-500 to-blue-500 border-4 border-black-100 flex items-center justify-center"
@@ -163,11 +163,11 @@ const ExperienceCard = ({
                   {experience.title}
                 </motion.h3>
                 
-                <p className="text-purple-300 font-medium text-lg">
+                <p className="text-purple-300 font-medium font-bold text-lg">
                   {experience.company}
                 </p>
                 
-                <p className="text-gray-400 text-sm">
+                <p className="text-gray-200 text-base font-medium">
                   {experience.duration}
                 </p>
               </div>
@@ -176,9 +176,12 @@ const ExperienceCard = ({
             {/* Description */}
             <motion.p 
               animate={{
-                color: isHovered ? "#e5e7eb" : "#9ca3af",
+                // color: isHovered ? "#e5e7eb" : "#9ca3af",
+                color: isHovered ? "#f3f4f6" : "#d1d5db",
               }}
-              className="text-gray-400 group-hover:text-gray-300 leading-relaxed transition-colors duration-300"
+              className="text-gray-300 group-hover:text-gray-100 leading-relaxed transition-colors duration-300"
+              // className="text-gray-400 group-hover:text-gray-300 leading-relaxed transition-colors duration-300"
+              
             >
               {experience.desc}
             </motion.p>
@@ -194,7 +197,8 @@ const ExperienceCard = ({
                   className="flex items-start gap-3"
                 >
                   <div className="w-2 h-2 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 mt-2 flex-shrink-0" />
-                  <p className="text-gray-300 text-sm leading-relaxed">
+                  {/* <p className="text-gray-300 text-sm leading-relaxed"> */}
+                  <p className="text-gray-100 text-base leading-relaxed font-medium">
                     {point}
                   </p>
                 </motion.div>
@@ -253,8 +257,16 @@ export const PremiumExperience = () => {
         {/* Timeline Container */}
         <div className="relative">
           {/* Vertical Timeline Line */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-purple-500 to-blue-500 opacity-30"
-               style={{ height: `${(workExperience.length - 1) * 300 + 100}px` }} />
+          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-purple-500 to-blue-500 opacity-60"
+               style={{ height: `${workExperience.length * 480 + 180}px` }} />
+
+          {/* Start Circle */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 w-3 h-3 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full top-0" />
+
+          {/* End Circle */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 w-3 h-3 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full" 
+              style={{ top: `${workExperience.length * 480 + 180 }px` }} />
+            
           
           {/* Timeline Cards */}
           <motion.div
