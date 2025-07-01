@@ -233,3 +233,75 @@ html {
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask-composite: exclude;
 }
+
+/* Add this to the bottom of your app/globals.css file */
+
+@layer utilities {
+  .line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+}
+
+/* Pin container group selector support */
+.group\/pin:hover .group-hover\/pin\:opacity-100 {
+  opacity: 1;
+}
+
+.group\/pin:hover .group-hover\/pin\:h-40 {
+  height: 10rem;
+}
+
+.group\/pin:hover .group-hover\/pin\:border-white\/\[0\.2\] {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+/* Add these to your app/globals.css file if not already present */
+
+@layer utilities {
+  /* Main heading style - same as Experience page */
+  .heading {
+    @apply text-center text-4xl font-bold md:text-5xl;
+  }
+
+  /* Purple text color - same as Experience page */
+  .text-purple {
+    @apply text-purple-400;
+  }
+
+  /* Line clamp utilities */
+  .line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+}
+
+/* Pin container group selector support */
+.group\/pin:hover .group-hover\/pin\:opacity-100 {
+  opacity: 1;
+}
+
+.group\/pin:hover .group-hover\/pin\:h-40 {
+  height: 10rem;
+}
+
+.group\/pin:hover .group-hover\/pin\:border-white\/\[0\.2\] {
+  border-color: rgba(255, 255, 255, 0.2);
+}
