@@ -4,7 +4,7 @@ import { SparklesIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
-
+import { AnimatedGreeting } from "@/components/ui/animated-greeting";
 import {
   slideInFromLeft,
   slideInFromRight,
@@ -37,17 +37,13 @@ export const HeroContent = () => {
             </h1>
           </motion.div>
 
+
+
           <motion.div
             variants={slideInFromLeft(0.5)}
-            className="flex flex-col gap-6 mt-6 text-6xl text-bold text-white max-w-[600px] w-auto h-auto"
+            className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
           >
-            <span>
-              Providing{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-                the best
-              </span>{" "}
-              project experience.
-            </span>
+            <AnimatedGreeting />
           </motion.div>
 
           <motion.p
