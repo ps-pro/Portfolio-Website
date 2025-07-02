@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { FaLocationArrow } from "react-icons/fa6";
 import { PinContainer } from "@/components/ui/3d-pin";
 
@@ -66,11 +67,40 @@ const projects = [
 
 export default function ProjectsPage() {
   return (
-    <section id="projects" className="py-20">
-      {/* Title - EXACT same styling as Experience page */}
-      <h1 className="heading">
-        <span className="text-purple">Recent Projects</span>
-      </h1>
+    <section id="projects" className="pt-32 pb-20">
+      {/* Title - EXACT same styling as PremiumExperience "Work Experience" */}
+      <motion.div
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="text-center z-20 mb-16"
+      >
+        <motion.h1 
+          className="text-5xl lg:text-7xl font-bold mb-6"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
+          <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-blue-500 bg-clip-text text-transparent animate-pulse">
+            Recent Projects
+          </span>
+        </motion.h1>
+        
+        <motion.div
+            initial={{ width: "100px" }}
+            animate={{ 
+              width: ["100px","600px", "100px"]
+            }}
+            transition={{ 
+              duration: 4,
+              delay: 0.7,
+              repeat: Infinity,
+              ease: "easeInOut",
+              times: [0, 0.5, 1]
+            }}
+            className="h-1 bg-gradient-to-r from-purple-500 to-blue-500 mx-auto rounded-full"
+          />
+      </motion.div>
 
       {/* Projects Grid */}
       <div className="mt-10 flex flex-wrap items-center justify-center gap-x-24 gap-y-8 p-4">

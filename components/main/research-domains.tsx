@@ -388,12 +388,30 @@ export const ResearchDomains = () => {
         transition={{ duration: 0.8 }}
         className="text-center z-20 mb-16"
       >
-        <h1 className="text-6xl lg:text-7xl font-bold mb-4">
-          <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-blue-500 bg-clip-text text-transparent">
-            Research Domains
-          </span>
-        </h1>
-        <div className="h-1 w-64 bg-gradient-to-r from-purple-500 to-blue-500 mx-auto rounded-full" />
+        <motion.h1 
+            className="text-5xl lg:text-7xl font-bold mb-6"
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-blue-500 bg-clip-text text-transparent animate-pulse">
+              Research Domains
+            </span>
+          </motion.h1>
+        <motion.div
+            initial={{ width: "100px" }}
+            animate={{ 
+              width: ["150px","650px", "150px"]
+            }}
+            transition={{ 
+              duration: 4,
+              delay: 0.7,
+              repeat: Infinity,
+              ease: "easeInOut",
+              times: [0, 0.5, 1]
+            }}
+            className="h-1 bg-gradient-to-r from-purple-500 to-blue-500 mx-auto rounded-full"
+          />
       </motion.div>
 
       {/* Cards Container */}

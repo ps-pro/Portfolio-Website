@@ -233,7 +233,7 @@ export const PremiumExperience = () => {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-20"
+          className="text-center z-20 mb-16"
         >
           <motion.h1 
             className="text-5xl lg:text-7xl font-bold mb-6"
@@ -247,9 +247,17 @@ export const PremiumExperience = () => {
           </motion.h1>
           
           <motion.div
-            initial={{ width: 0 }}
-            animate={{ width: "200px" }}
-            transition={{ duration: 1, delay: 0.5 }}
+            initial={{ width: "100px" }}
+            animate={{ 
+              width: ["100px","600px", "100px"]
+            }}
+            transition={{ 
+              duration: 4,
+              delay: 0.7,
+              repeat: Infinity,
+              ease: "easeInOut",
+              times: [0, 0.5, 1]
+            }}
             className="h-1 bg-gradient-to-r from-purple-500 to-blue-500 mx-auto rounded-full"
           />
         </motion.div>
