@@ -305,3 +305,47 @@ html {
 .group\/pin:hover .group-hover\/pin\:border-white\/\[0\.2\] {
   border-color: rgba(255, 255, 255, 0.2);
 }
+
+/* Add this to your globals.css file for the QuantBox color flow animation */
+
+@keyframes colorFlow {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 100% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* Orbitron font import */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+/* Enhanced glow effects for QuantBox */
+.quantbox-glow {
+  text-shadow: 
+    0 0 10px rgba(0, 255, 65, 0.8),
+    0 0 20px rgba(0, 255, 65, 0.6),
+    0 0 40px rgba(0, 255, 65, 0.4),
+    0 0 80px rgba(0, 255, 65, 0.2);
+}
+
+/* Pulse animation for Easter egg hints */
+@keyframes easterEggPulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
