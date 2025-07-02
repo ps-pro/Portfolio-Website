@@ -24,7 +24,7 @@ const NAV_LINKS = [
     link: "/projects",
     dropdown: [
       { title: "QuantBoX", link: "/projects/quantbox" },
-      { title: "AutoAnalytiX", link: "/projects/autoanaytix" },
+      { title: "AutoAnalytiX", link: "/projects/autoanalytix" },
       { title: "separator", link: "#" },
       { title: "All Projects", link: "/projects" }
     ]
