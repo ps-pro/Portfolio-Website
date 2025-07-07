@@ -205,7 +205,7 @@ export default function QuantBoxPage() {
           >
             <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-5xl mx-auto font-light"
                style={{ fontFamily: "'Inter', 'Helvetica Neue', sans-serif" }}>
-              Inspired by <span className="text-green-400 font-semibold">"The Big Short"</span> — A comprehensive simulation environment for 
+              Inspired by <span className="text-green-400 font-semibold">&quot;"The Big Short"&quot;</span> — A comprehensive simulation environment for 
               creating, testing, and stress-testing financial products including{' '}
               <span className="text-green-400 font-mono">MBS</span>,{' '}
               <span className="text-green-400 font-mono">CDO</span>,{' '}
