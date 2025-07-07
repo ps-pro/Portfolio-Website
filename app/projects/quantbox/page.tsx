@@ -205,7 +205,7 @@ export default function QuantBoxPage() {
           >
             <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-5xl mx-auto font-light"
                style={{ fontFamily: "'Inter', 'Helvetica Neue', sans-serif" }}>
-              Inspired by <span className="text-green-400 font-semibold">&quot;"The Big Short"&quot;</span> — A comprehensive simulation environment for 
+              Inspired by <span className="text-green-400 font-semibold">&quot;The Big Short&quot;</span> — A comprehensive simulation environment for 
               creating, testing, and stress-testing financial products including{' '}
               <span className="text-green-400 font-mono">MBS</span>,{' '}
               <span className="text-green-400 font-mono">CDO</span>,{' '}
@@ -312,7 +312,7 @@ export default function QuantBoxPage() {
               &quot;It takes genius to bet against the majority with the right timing.&quot;
             </blockquote>
             <p className="text-green-300 font-mono text-xs sm:text-sm opacity-80">
-              &quot;— Dr. Michael Burry, <em>The Big Short&quot;</em>
+              — Dr. Michael Burry, <em>The Big Short</em>
             </p>
           </motion.div>          
         </motion.div>
