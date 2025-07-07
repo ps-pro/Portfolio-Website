@@ -309,10 +309,10 @@ export default function QuantBoxPage() {
             className="max-w-3xl mx-auto"
           >
             <blockquote className="text-green-400 font-mono text-sm sm:text-base opacity-100 italic border-l-2 border-green-400/30 pl-6 mb-4">
-              "It takes genius to bet against the majority with the right timing."
+              &quot;It takes genius to bet against the majority with the right timing.&quot;
             </blockquote>
             <p className="text-green-300 font-mono text-xs sm:text-sm opacity-80">
-              — Dr. Michael Burry, <em>The Big Short</em>
+              &quot;— Dr. Michael Burry, <em>The Big Short&quot;</em>
             </p>
           </motion.div>          
         </motion.div>
