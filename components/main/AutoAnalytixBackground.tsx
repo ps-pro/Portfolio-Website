@@ -40,9 +40,9 @@ const AutoAnalytixBackground: React.FC = () => {
   // Hardcoded Alert System Settings
   const ALERT_SETTINGS = {
     maxDots: 500,           // Target number of active dots
-    spawnRate: 80,          // Milliseconds between spawns
-    dotLifespan: 1000,      // 1 second lifespan
-    dotSize: 2.5,           // Small dot size
+    spawnRate: 5,          // Milliseconds between spawns
+    dotLifespan: 2000,      // 1 second lifespan
+    dotSize: 4.0,           // Small dot size
     alertColor: '#FF0000',  // Bright red
     pulseSpeed: 0.15        // SOS pulse animation speed
   };
