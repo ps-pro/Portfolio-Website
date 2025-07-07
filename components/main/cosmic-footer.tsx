@@ -82,36 +82,7 @@ const professionalLinks = {
 
 export const CosmicFooter = () => {
   return (
-    <footer className="relative w-full bg-gradient-to-t from-[#030014] via-[#0a0a2e] to-transparent">
-      {/* Cosmic Background Effects */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-0 left-1/4 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl" />
-      </div>
-
-      {/* Animated Stars */}
-      <div className="absolute inset-0">
-        {[...Array(15)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute w-1 h-1 bg-white rounded-full opacity-50"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-            }}
-            animate={{
-              opacity: [0.2, 0.8, 0.2],
-              scale: [0.5, 1, 0.5],
-            }}
-            transition={{
-              duration: 2 + Math.random() * 2,
-              repeat: Infinity,
-              delay: Math.random() * 2,
-            }}
-          />
-        ))}
-      </div>
-
+    <footer className="relative w-full bg-transparent">
       <div className="relative z-10 container mx-auto px-6 py-6">
         {/* Three Column Layout */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
