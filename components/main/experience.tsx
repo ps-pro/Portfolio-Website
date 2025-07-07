@@ -10,62 +10,32 @@ import { useState } from "react";
 const workExperience = [
   {
     id: 1,
-    title: "Lead Frontend Developer",
-    company: "TechCorp Solutions",
-    duration: "Jan 2023 - Present",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
-    thumbnail: "/exp4.svg",
-    gradient: "from-orange-500/20 via-yellow-500/20 to-amber-500/20",
-    glowColor: "shadow-orange-500/50",
+    title: "Research Intern",
+    company: "Mohamed bin Zayed University of Artificial Intelligence",
+    duration: "Jan 2025 - June 2025",
+    desc: "Leading meme analysis research with comprehensive annotation schema and team management for AI-driven consumer sentiment analysis.",
+    thumbnail: "/exp2.png",
+    gradient: "from-blue-500/20 via-cyan-500/20 to-teal-500/20",
+    glowColor: "shadow-blue-500/50",
     points: [
-      "Led a team of 5 developers in creating responsive web applications using React.js and Next.js framework.",
-      "Implemented advanced state management solutions and optimized application performance by 40%.",
-      "Collaborated with UX/UI designers to deliver pixel-perfect implementations and seamless user experiences."
+      "Led problem formulation and designed comprehensive annotation schema for analyzing product-related memes to identify consumer sentiment and product preferences.",
+      "Managed team of 9 annotators across 3 groups to create 5,000-annotated meme dataset for robust AI training data.",
+      "Implemented IAA methodologies using Krippendorff's Alpha, hierarchical conditional analysis, and two-stage fuzzy matching, achieving high reliability scores (α > 0.800) for dataset validation."
     ]
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    company: "JSM Technologies",
-    duration: "Jun 2022 - Dec 2022",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    thumbnail: "/exp2.svg",
-    gradient: "from-blue-500/20 via-cyan-500/20 to-teal-500/20",
-    glowColor: "shadow-blue-500/50",
-    points: [
-      "Built cross-platform mobile applications serving over 10,000 active users with React Native framework.",
-      "Integrated third-party APIs and implemented real-time chat functionality using Socket.io and Firebase.",
-      "Optimized app performance and reduced loading times by 50% through efficient code splitting techniques."
-    ]
-  },
-  {
-    id: 3,
-    title: "Freelance App Dev Project",
-    company: "Independent Contractor",
-    duration: "Mar 2022 - May 2022",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    thumbnail: "/exp3.svg",
-    gradient: "from-emerald-500/20 via-green-500/20 to-lime-500/20",
-    glowColor: "shadow-emerald-500/50",
-    points: [
-      "Managed complete project lifecycle from requirement analysis to successful App Store deployment.",
-      "Developed custom e-commerce solution with payment gateway integration and inventory management system.",
-      "Delivered project 2 weeks ahead of schedule while maintaining high code quality standards."
-    ]
-  },
-  {
-    id: 4,
-    title: "Frontend Engineer Intern",
-    company: "StartupHub Inc",
-    duration: "Aug 2021 - Feb 2022",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
-    thumbnail: "/exp1.svg",
+    title: "Gen AI Developer Intern",
+    company: "Qbitrix Innovations",
+    duration: "May 2024 - July 2024",
+    desc: "Developed sophisticated multi-agent educational recommendation system with advanced AI orchestration and personalized learning capabilities.",
+    thumbnail: "/exp1.png",
     gradient: "from-purple-500/20 via-pink-500/20 to-red-500/20",
     glowColor: "shadow-purple-500/50",
     points: [
-      "Contributed to developing interactive dashboard components using React.js and TypeScript technologies.",
-      "Participated in code reviews and implemented responsive design patterns for mobile-first approach.",
-      "Assisted senior developers in debugging complex issues and learned industry best practices."
+      "Developed multi-agent educational recommendation system using LangChain and LangGraph, implementing 6 specialized AI agents with conditional routing & persistent memory management.",
+      "Integrated RAG system supporting multiple file formats (PDF, PPT, Excel), web resources and report generation for personalized learning recommendations.",
+      "Built scalable architecture with advanced agent orchestration for intelligent educational content delivery and student performance optimization."
     ]
   },
 ];
@@ -299,4 +269,3 @@ export const PremiumExperience = () => {
     </section>
   );
 };
-

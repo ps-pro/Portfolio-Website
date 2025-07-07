@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import type { PropsWithChildren } from "react";
 
-import { Footer } from "@/components/main/footer";
+import { CosmicFooter } from "@/components/main/cosmic-footer";
 import { Navbar } from "@/components/main/navbar";
 import { StarsCanvas } from "@/components/main/star-background";
 import { CosmicPlayModal } from "@/components/main/cosmic-play-modal"; // Add this import
@@ -39,7 +39,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
           <StarsCanvas />
           <Navbar />
           {children}
-          <Footer />
+          <CosmicFooter />
           <CosmicPlayModal /> {/* Add this component */}
         </CosmicProvider> {/* Close the wrapper */}
       </body>

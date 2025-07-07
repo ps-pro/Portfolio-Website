@@ -1,3 +1,4 @@
+// components/sub/hero-content.tsx
 "use client";
 
 import { SparklesIcon } from "@heroicons/react/24/solid";
@@ -5,6 +6,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 import { AnimatedGreeting } from "@/components/ui/animated-greeting";
+import { TypewriterRole } from "@/components/ui/typewriter-role";
 import {
   slideInFromLeft,
   slideInFromRight,
@@ -37,8 +39,6 @@ export const HeroContent = () => {
             </h1>
           </motion.div>
 
-
-
           <motion.div
             variants={slideInFromLeft(0.5)}
             className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
@@ -50,8 +50,8 @@ export const HeroContent = () => {
             variants={slideInFromLeft(0.8)}
             className="text-lg text-gray-400 my-5 max-w-[600px]"
           >
-            I&apos;m a Full Stack Software Engineer with experience in Website,
-            Mobile, and Software development. Check out my projects and skills.
+            <TypewriterRole />
+            {" "} passionate about AI systems, data analytics, and research. I enjoy building solutions and sharing insights. Check out my skills, projects, and publications.
           </motion.p>
 
           <motion.a

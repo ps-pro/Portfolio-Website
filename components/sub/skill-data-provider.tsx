@@ -1,3 +1,4 @@
+// components/sub/skill-data-provider.tsx
 "use client";
 
 import { motion } from "framer-motion";
@@ -39,7 +40,12 @@ export const SkillDataProvider = ({
       custom={index}
       transition={{ delay: index * animationDelay }}
     >
-      <Image src={`/skills/${src}`} width={width} height={height} alt={name} />
+      <Image 
+        src={`/myskills/${src}`} // Updated to use your new folder
+        width={width} 
+        height={height} 
+        alt={name} 
+      />
     </motion.div>
   );
 };

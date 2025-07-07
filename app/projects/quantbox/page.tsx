@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { EnhancedMatrix } from "@/components/main/quantbox-matrix";
 import { EnhancedMatrixControl } from "@/components/main/matrix-control";
-import { Footer } from "@/components/main/footer";
 
 interface MatrixSettings {
   fontSize: number;
@@ -318,11 +317,6 @@ export default function QuantBoxPage() {
           </motion.div>          
         </motion.div>
       </main>
-      
-      {/* Original Portfolio Footer - Higher z-index to show above matrix */}
-      <div className="relative z-20">
-        <Footer />
-      </div>
     </>
   );
 }

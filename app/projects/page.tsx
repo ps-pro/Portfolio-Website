@@ -11,7 +11,7 @@ const projects = [
     id: 1,
     title: "FigPro - Collaborative Design Tool",
     des: "A collaborative design tool with real-time collaboration, vector editing, and a responsive UI.",
-    img: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=464&h=300&fit=crop",
+    img: "/projects_data/project1/proj1.png",
     iconLists: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
@@ -25,7 +25,7 @@ const projects = [
     id: 2,
     title: "Yoom - Video Conferencing App",
     des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=464&h=300&fit=crop",
+    img: "/projects_data/project2/proj2.png",
     iconLists: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
@@ -39,7 +39,7 @@ const projects = [
     id: 3,
     title: "AI Image SaaS - Canva Application",
     des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=464&h=300&fit=crop",
+    img: "/projects_data/project3/proj3.png",
     iconLists: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
@@ -53,7 +53,7 @@ const projects = [
     id: 4,
     title: "Animated Apple iPhone 3D Website",
     des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects.",
-    img: "https://images.unsplash.com/photo-1592286622648-eef49cf2eeba?w=464&h=300&fit=crop",
+    img: "/projects_data/project4/proj4.png",
     iconLists: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
@@ -112,9 +112,14 @@ export default function ProjectsPage() {
             <PinContainer title="Visit" href={link}>
               {/* Project Image Container */}
               <div className="relative mb-10 flex h-[30vh] w-[80vw] items-center justify-center overflow-hidden sm:h-[40vh] sm:w-[570px]">
-                {/* Background */}
+                {/* Background - EXACT sanidhyy implementation */}
                 <div className="relative h-full w-full overflow-hidden bg-[#13162d] lg:rounded-3xl">
-                  <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-blue-900/20" />
+                  <Image
+                    height={330}
+                    width={552}
+                    src="/bg.png"
+                    alt="bg-img"
+                  />
                 </div>
 
                 {/* Project Image */}
